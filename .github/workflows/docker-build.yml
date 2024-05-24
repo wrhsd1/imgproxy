@@ -31,5 +31,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
+          push: true  # 确保构建的镜像被推送          
           tags: wrhsd/imgproxy:latest
           platforms: linux/amd64
